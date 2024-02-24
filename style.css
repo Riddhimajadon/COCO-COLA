@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'chivo', sans-serif;
+}
+section
+{position: relative;
+width: 100%;
+min-height: 100vh;
+padding:100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #a30932;
+transition: 0.5s;
+}
+header
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo{
+	width: 200px;
+	height: auto;
+  }
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li 
+{
+    list-style: none;
+}
+header ul li a 
+{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox
+{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h2
+{
+    color:#fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textbox h2 span
+{
+    font-size: 2em;
+}
+.content .textbox p
+{
+    color: #fff;
+    font-size: 120%;
+}
+.content .textbox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .imgbox
+{
+    width: 800px;
+	height:auto;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+    
+}
+.content .imgbox img
+{
+    max-width: 260px;
+}
+.thumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover
+{
+    transform: translateY(-15px);
+}
+.thumb li img
+{
+    max-width: 40px;
+}
+.sci 
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li 
+{
+    list-style: none;
+}
+.sci li a 
+{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+.other__video{
+    width:100%;
+    height: 100%;
+    object-fit: cover !important;
+}
+*{
+    box-sizing: border-box;
+}
+video{
+    overflow-clip-margin: content-box;
+    overflow: border-box;
+}
+.main-footer {
+    background: #a30932;
+    color: #fff;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	line-height: 1.4;
+}
+
+.text-center {
+    text-align: center;
+}
+.footer {
+    display: block;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+.more{
+	padding: 1rem 0;
+	background-color: #fff;
+}
+.more-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 2rem 3rem;
+}
+.more h3{
+	border-left: 5px solid var(--primary-color);
+	padding-left: 1rem;
+	color:#333;
+	margin: 2rem 0 1rem;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.more .item{
+	margin:1.5em 0;
+}
+.item{
+	flex-basis: calc(33.33% -20px);
+	margin-top: 50px;
+}
+
+.more .item > div{
+	overflow: hidden;
+}
+ .more .item img{
+	width:100%;
+	height:auto;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	transition: 1s ease;
+	transform-origin: left center;
+ }
+
+ .more .content .item a{
+	color:#000;
+
+ }
+ .more .item a{
+	padding: 0 1rem;
+	color: #333;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	display: inline-block;
+	margin-top:1rem;
+	font-weight: 500;
+ }
+ .item a:hover .arrow-icon::after{
+	content: "";
+	position:absolute;
+	right: 0;
+	top:50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background-color: url("./arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+ a{
+	text-decoration:none;
+ }
+
+ a:-weblkit-any-link{
+	cursor: pointer;
+ }
+ .arrow-icon {
+    content: "";
+    background-image: url(https://cocacola-landing-page-clone.netlify.app/img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 20px;
+    margin-left: 0.3rem;
+    padding: 0;
+    vertical-align: middle;
+    width: 18px;
+    margin-bottom: 2px;
+    transition: 0.3s margin-left ease-in-out;
+ }
+ i {
+    font-style: italic;
+}
+
